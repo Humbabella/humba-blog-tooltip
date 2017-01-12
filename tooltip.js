@@ -31,8 +31,8 @@ Hpts = {
 	},
 	
 	show_tooltip: function (e, dataset) {
-		Hpts.tooltip.style.left = (e.x + 10) + 'px';
-		Hpts.tooltip.style.top = (e.y + 10) + 'px';
+		Hpts.tooltip.style.left = (e.x + 25) + 'px';
+		Hpts.tooltip.style.top = (e.y + 25) + 'px';
 		Hpts.tooltip.innerHTML = '';
 		if (dataset.text) {
 			Hpts.tooltip.style.border = '1px solid black';

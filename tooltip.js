@@ -24,16 +24,15 @@ Hpts = {
 	
 	create_tooltip: function () {
 		Hpts.tooltip = document.createElement('div');
-		Hpts.tooltip.style.position = 'absolute';
+		Hpts.tooltip.style.position = 'fixed';
 		Hpts.tooltip.style.display = 'none';
 		Hpts.tooltip.style.backgroundColor = '#edf';
 		document.body.appendChild(Hpts.tooltip);
 	},
 	
 	show_tooltip: function (e, dataset) {
-		var c = e.currentTarget;
-		var x = (c.offsetLeft - c.scrollLeft + c.clientLeft + c.clientWidth + 10)
-		var y = (c.offsetTop - c.scrollTop + c.clientTop + c.clientHeight + 10);
+		var x = e.clientX;
+		var y = e.clientY;
 		Hpts.tooltip.style.left = (x + 25) + 'px';
 		Hpts.tooltip.style.top = (y + 25) + 'px';
 		Hpts.tooltip.innerHTML = '';
@@ -64,3 +63,5 @@ Hpts = {
 	}	
 	
 }
+
+Hpts.affix_scripts();

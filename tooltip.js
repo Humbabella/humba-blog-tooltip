@@ -31,8 +31,9 @@ Hpts = {
 	},
 	
 	show_tooltip: function (e, dataset) {
-		var x = e.x || e.ClientX;
-		var y = e.y || e.ClientY;
+		var c = e.currentTarget;
+		var x = (c.offsetLeft - c.scrollLeft + c.clientLeft + c.clientWidth + 10)
+		var y = (c.offsetTop - c.scrollTop + c.clientTop + c.clientHeight + 10;
 		Hpts.tooltip.style.left = (x + 25) + 'px';
 		Hpts.tooltip.style.top = (y + 25) + 'px';
 		Hpts.tooltip.innerHTML = '';
@@ -63,5 +64,3 @@ Hpts = {
 	}	
 	
 }
-
-Hpts.on_load(Hpts.affix_scripts);

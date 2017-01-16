@@ -37,13 +37,15 @@ Hpts = {
 		Hpts.tooltip.t.style.backgroundColor = '#edf';
 		Hpts.tooltip.t.style.backgroundImage = 'none';
 		Hpts.tooltip.t.style.width = 'auto';
-		Hpts.tooltip.t.style.maxWidth = '207px';
+		Hpts.tooltip.t.style.maxWidth = '217px';
 		Hpts.tooltip.t.style.height = 'auto';
+		Hpts.tooltip.t.style.boxShadow = '3px 3px 5px #666';
 		
+		Hpts.tooltip.a.style.marginBottom = '8px';
 		Hpts.tooltip.a.style.width = '223px';
 		Hpts.tooltip.a.style.height = '310px';
-		
-		Hpts.tooltip.style.backgroundColor = '#edf';
+		Hpts.tooltip.a.style.boxShadow = '3px 3px 5px #666';
+		Hpts.tooltip.a.style.borderRadius = '12px';
 		
 		Hpts.tooltip.appendChild(Hpts.tooltip.a);
 		Hpts.tooltip.appendChild(Hpts.tooltip.t);
@@ -55,14 +57,13 @@ Hpts = {
 		var y = e.y || e.ClientY;
 		Hpts.tooltip.style.left = (x + 25) + 'px';
 		Hpts.tooltip.style.top = (y + 25) + 'px';
-		Hpts.tooltip.innerHTML = '';
 		if (dataset.text) {
 			Hpts.tooltip.t.style.display = 'block';
 			Hpts.tooltip.t.innerHTML = dataset.text;
 		} else Hpts.tooltip.t.style.display = 'none';
 		if (dataset.magicid) {
 			Hpts.tooltip.a.style.display = 'block';
-			Hpts.tooltip.style.backgroundImage = 'url(\'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='+dataset.magicid+'&type=card\')';
+			Hpts.tooltip.a.style.backgroundImage = 'url(\'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='+dataset.magicid+'&type=card\')';
 		} else Hpts.tooltip.t.style.display = 'none';
 		
 		Hpts.tooltip.style.display = 'block';

@@ -64,7 +64,7 @@ Hpts = {
 		if (dataset.magicid) {
 			Hpts.tooltip.a.style.display = 'block';
 			Hpts.tooltip.a.style.backgroundImage = 'url(\'http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid='+dataset.magicid+'&type=card\')';
-		} else Hpts.tooltip.t.style.display = 'none';
+		} else Hpts.tooltip.a.style.display = 'none';
 		
 		Hpts.tooltip.style.display = 'block';
 	},

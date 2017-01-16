@@ -53,8 +53,8 @@ Hpts = {
 	},
 	
 	show_tooltip: function (e, dataset) {
-		var x = e.x || e.ClientX;
-		var y = e.y || e.ClientY;
+		var x = e.clientX;
+		var y = e.clientY;
 		Hpts.tooltip.style.left = (x + 25) + 'px';
 		Hpts.tooltip.style.top = (y + 25) + 'px';
 		if (dataset.text) {
@@ -75,4 +75,4 @@ Hpts = {
 	
 }
 
-Hpts.on_load(Hpts.affix_scripts);
+Hpts.affix_scripts();

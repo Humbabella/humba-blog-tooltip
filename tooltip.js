@@ -37,7 +37,7 @@ Hpts = {
 		Hpts.tooltip.t.style.backgroundColor = '#edf';
 		Hpts.tooltip.t.style.backgroundImage = 'none';
 		Hpts.tooltip.t.style.width = 'auto';
-		Hpts.tooltip.t.style.maxWidth = '217px';
+		Hpts.tooltip.t.style.maxWidth = '211px';
 		Hpts.tooltip.t.style.height = 'auto';
 		Hpts.tooltip.t.style.boxShadow = '3px 3px 5px #666';
 		

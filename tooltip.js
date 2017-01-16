@@ -27,7 +27,7 @@ Hpts = {
 		Hpts.tooltip.a = document.createElement('div');
 		Hpts.tooltip.t = document.createElement('div');
 		
-		Hpts.tooltip.style.position = 'absolute';
+		Hpts.tooltip.style.position = 'fixed';
 		Hpts.tooltip.style.display = 'none';
 		
 		Hpts.tooltip.t.style.display = 'none';
